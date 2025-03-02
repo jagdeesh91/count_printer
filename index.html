@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greeter</title>
+    <link rel="stylesheet" href="styll.css">
+ </head>
+ <body>
+     
+ <h1 id="hi" onclick="greate()">click we have surprise for you</h1>
+  <input type="number" id="he" placeholder="enter number ">
+  <button onclick="countprint()">click on</button>
+  <p id = "result"></p>
+ <script>
+   function greate(){
+    document.getElementById("hi").innerHTML = "good morning";
+   }
+</script>
+<script>
+function countprint(){
+let num =  document.getElementById("he").value
+let resultarea =  document.getElementById("result")
+  
+let countText = "";
+            for (let i = 1; i <= num; i++) {
+                countText += i + " ";
+            }
+
+            resultarea.innerText = countText;
+}
+
+
+</script>
+ </body>
+ </html>
